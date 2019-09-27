@@ -1,0 +1,18 @@
+{% extends 'blog/base_blog.html' %}
+
+
+
+
+{% block title %}
+    TITLE
+{% endblock %}
+
+
+{% block content %}
+    <h1 class="mb-5">Posts:</h1>
+    {% for name in names%}
+        <div style="background-color: darkgreen">
+            <h2 style="color: cyan">{{ name }}</h2>
+        </div>
+    {% endfor %}
+{% endblock %}
