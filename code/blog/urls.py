@@ -4,6 +4,5 @@ from .views import *
 
 
 urlpatterns = [
-    path('', hello),
-    path('1/', posts_list),
+    path('', posts_list, name='posts_lists_url'),
 ]
